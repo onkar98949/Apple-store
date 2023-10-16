@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+    
+    
+body{
+    content: "";
+    background-image: url('/img/bg3.png');
+    background-size:cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+#navbar{
+   
+    /* position: relative; */
+    height: 10vw;
+   
+    display: flex;
+    align-items: center; 
+    justify-content:space-between;
+    /* background-color: rgb(238, 172, 50); */
+}
+#logo{
+    margin: 13px 24px;
+    
+}
+
+#logo img{
+    width: 90px;
+    margin: 10px;
+    height: 66px;
+    border-radius: 10px;
+}
+#navbar ul{
+    display: flex;
+    padding-right: 10px;
+    gap: 20px;
+}
+
+#navbar ul li{
+    list-style: none;
+}
+
+#navbar ul li a{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:400;
+    font-size: 20px;
+    color: white;
+
+    padding: 3px 19px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    
+}
+
+#navbar ul li a:hover{
+   
+    background-color: rgb(225, 223, 223);
+    color: rgb(38, 38, 38);
+}
+
+.content{
+   
+    width: 100%;
+    margin-top: 8vw;
+    
+}
+
+.phone1{
+    
+    padding: 3vw;
+    background-color: rgba(20, 20, 20, 0.667);
+    margin: auto;
+    align-items: center;
+   
+    width: 80vw;
+    height: 25vw;
+    display: flex;
+   
+    border-radius: 20px;
+    text-align: center;
+}
+.phone1 img{
+   
+   width: 20vw;
+   border-radius: 20px; 
+}
+.phone1 p{
+    /* padding: 20px 30px; */
+    padding: 1vw 4vw;
+    color: white;
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    font-weight: 400;
+    border-radius: 20px;
+
+}
+.phone1 h2{
+   border-radius: 30px;
+   color: rgb(18, 18, 19);
+   padding: 11px 90px;
+   margin: 1vw 15vw;
+   font-size:2vw;
+   background-color:rgb(249, 251, 253);
+} 
+
+.phone1content button{
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+
+    font-size: 1.5vw;
+    padding: 7px 9px;
+    transition: 0.3s ease;
+    letter-spacing: -0.5px;
+}
+
+.phone1content button:hover{
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+   
+}
+.drop-down{
+    padding-top: 20px;
+    color: aliceblue;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    visibility: hidden;
+}
+.drop-down li{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 3px;
+    margin: auto;
+    font-size: 17px;
+    
+}
+.drop-down li:hover{
+    background-color:aliceblue;
+    color: black;
+    border-radius: 5px;
+}
+
+.item:hover > .drop-down{
+    visibility: visible;
+   
+}
+
+form{
+    padding-top: 11vw;
+    height: 300px;
+    width: 70%;
+    /* background-color: red; */
+    margin: auto;
+    text-align: center;
+}
+form h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.8vw;
+    font-weight: 600;
+    color: azure;
+}
+.formdiv{
+    padding: 6vw 0vw;
+    background-color: rgba(26, 26, 26, 0.763);
+    border-radius: 10px;
+}
+.email{
+    background-color: rgba(255, 255, 255, 0.442);
+    margin: 10px 10px;
+    padding: 5px 6vw;
+    width: 15vw;
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+}
+.formdiv p{
+    padding: 10px;
+    font-size: 1.7vw;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+.formdiv button{
+       padding: 10px;
+       border-radius: 5px;
+       font-size: larger;
+       font-weight: 800;
+       color: rgba(26, 26, 26, 0.918);
+       background-color: azure;
+       font-family: Arial, Helvetica, sans-serif;
+       transition: 0.2s;
+}
+.formdiv button:hover{
+    background-color: rgba(21, 18, 18, 0.829);
+    color: azure;
+    cursor: pointer;
+    border: 1px solid white;
+}
